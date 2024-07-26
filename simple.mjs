@@ -12,8 +12,8 @@ const DEV_DEPS = [
 
 const SHARED_PATH = "./templates/shared";
 const TEMPLATE_PATH = "./templates/simple";
-const SHOULD_CLEAN_UP = false;
-const CLEAN_UP_PATHS = [TEMPLATE_PATH, "*.mjs"];
+const SHOULD_CLEAN_UP = true;
+const CLEAN_UP_PATHS = [TEMPLATE_PATH, "./*.mjs"];
 const SCRIPTS = {
   test: "node --import tsx --test **/*.test.ts",
   start: "tsx src/main.ts",
